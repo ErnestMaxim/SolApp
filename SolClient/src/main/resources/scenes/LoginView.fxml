@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="640.0" prefWidth="1080.0" spacing="10" stylesheets="@LoginView.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="me.solapp.core.LoginController">
+    <Label style="-fx-font-size: 30px;" text="LOGIN">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+    <TextField fx:id="usernameField" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="460.0" promptText="Username" />
+    <PasswordField fx:id="passwordField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="460.0" promptText="Password" />
+    <Label fx:id="statusLabel" textFill="red" />
+    <Button fx:id="loginButton" prefHeight="31.0" prefWidth="298.0" text="Login" />
+    <Button fx:id="registerButton" prefHeight="31.0" prefWidth="140.0" text="Register" />
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+</VBox>

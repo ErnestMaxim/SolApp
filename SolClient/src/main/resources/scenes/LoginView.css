@@ -1,0 +1,67 @@
+/* LoginView.css */
+
+/* Root VBox styling */
+
+.root{
+    -fx-padding: 20px;
+}
+
+/* Label styling */
+.label {
+    -fx-text-fill: #212121;
+    -fx-font-weight: bold;
+}
+
+/* Specific style for the LOGIN label */
+.label {
+    -fx-font-size: 30px;
+    -fx-padding: 0 0 20px 0;
+}
+
+/* Text field and Password field styling */
+.text-field, .password-field {
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #212121;
+    -fx-border-width: 2px;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Error message styling */
+#messageLabel {
+    -fx-text-fill: #e74c3c;
+    -fx-font-size: 13px;
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: white;
+    -fx-text-fill: #212121;
+    -fx-font-weight: bold;
+    -fx-border-color: #212121;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-transition: all 0.6s ease-in-out;
+}
+
+.button:hover {
+    -fx-background-color: #212121;
+    -fx-text-fill: white;
+    -fx-transition: all 0.6s ease-in-out;
+}
+
+.button:pressed {
+    -fx-background-color: #cdcdcd;
+    -fx-text-fill: #212121;
+    -fx-transition: all 0.6s ease-in-out;
+}

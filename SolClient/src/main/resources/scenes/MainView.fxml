@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1080.0" stylesheets="@MainView.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.solapp.core.MainController">
+   <children>
+      <!-- Top HBox for navigation -->
+      <HBox fx:id="topHBox" prefHeight="70.0" prefWidth="1080.0">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/map.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="84.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/admin.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+
+      <!-- Current Day Section -->
+      <VBox alignment="CENTER" layoutX="390.0" layoutY="130.0" prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sunny.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D height="250.0" minX="125.0" minY="125.0" width="250.0" />
+               </viewport>
+            </ImageView>
+            <Label fx:id="minMaxTemperature" text="0°C / 0°C">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="cityLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="130.0" text="City">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="countryLabel" text="Country" />
+         </children>
+      </VBox>
+
+      <!-- Smaller Forecast Cards -->
+      <HBox id="cardContainer" layoutX="145.0" layoutY="460.0" prefHeight="150.0" prefWidth="791.0">
+         <children>
+            <!-- Repeatable card template for each day -->
+            <VBox alignment="CENTER" prefHeight="150.0" prefWidth="159.0">
+               <children>
+                  <Label fx:id="day1" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="164.0" text="2025-01-08" />
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/sunny.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D height="250.0" minX="125.0" minY="125.0" width="250.0" />
+                     </viewport>
+                  </ImageView>
+                  <Label fx:id="temp1" text="20°C / 15°C" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="150.0" prefWidth="159.0">
+               <children>
+                  <Label fx:id="day2" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="164.0" text="2025-01-09" />
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/sunny.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D height="250.0" minX="125.0" minY="125.0" width="250.0" />
+                     </viewport>
+                  </ImageView>
+                  <Label fx:id="temp2" text="22°C / 16°C" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="150.0" prefWidth="159.0">
+               <children>
+                  <Label fx:id="day3" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="164.0" text="2025-01-10" />
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/sunny.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D height="250.0" minX="125.0" minY="125.0" width="250.0" />
+                     </viewport>
+                  </ImageView>
+                  <Label fx:id="temp3" text="18°C / 12°C" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="150.0" prefWidth="159.0">
+               <children>
+                  <Label fx:id="day4" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="164.0" text="2025-01-11" />
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/sunny.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D height="250.0" minX="125.0" minY="125.0" width="250.0" />
+                     </viewport>
+                  </ImageView>
+                  <Label fx:id="temp4" text="20°C / 14°C" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="150.0" prefWidth="159.0">
+               <children>
+                  <Label fx:id="day5" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="164.0" text="2025-01-12" />
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/sunny.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D height="250.0" minX="125.0" minY="125.0" width="250.0" />
+                     </viewport>
+                  </ImageView>
+                  <Label fx:id="temp5" text="24°C / 18°C" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

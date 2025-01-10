@@ -1,0 +1,33 @@
+/* General styling */
+.root {
+    -fx-background-color: white;
+}
+
+/* Styling for the top HBox */
+#topHBox {
+    -fx-background-color: #212121;
+    -fx-padding: 10;
+}
+
+/* Styling for VBox cards in the second HBox */
+#cardContainer VBox {
+    -fx-background-color: #212121;
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 15;
+    -fx-padding: 10;
+    -fx-spacing: 5;
+}
+
+#cardContainer VBox Label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Add a new class for hovered ImageView */
+#topHBox .ImageView:hover {
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+}

@@ -1,0 +1,89 @@
+/* MapView.css */
+
+/* Root Pane Styling */
+.root {
+    -fx-background-color: white;
+    -fx-padding: 20px;
+}
+
+/* Top HBox Styling */
+#topHBox {
+    -fx-background-color: #212121;
+    -fx-padding: 10;
+    -fx-border-radius: 5px;
+    -fx-spacing: 15;
+}
+
+#topHBox .label {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+#topHBox .ImageView:hover {
+    -fx-background-color: #212121;
+    -fx-text-fill: white;
+    -fx-transition: all 0.6s ease-in-out;
+}
+
+#topHBox .ImageView:pressed {
+    -fx-background-color: #cdcdcd;
+    -fx-text-fill: #212121;
+}
+
+/* Map Area Styling */
+#mapContainer {
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 15px;
+}
+
+#mapContainer .text-field{
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+#mapContainer .text-field:focused{
+    -fx-border-color: #212121;
+    -fx-border-width: 2px;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Map Labels Styling */
+#mapContainer .label {
+    -fx-text-fill: #212121;
+    -fx-font-weight: bold;
+}
+
+/* Action Buttons Styling */
+#findButton {
+    -fx-background-color: white;
+    -fx-text-fill: #212121;
+    -fx-font-weight: bold;
+    -fx-border-color: #212121;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-padding: 10px;
+    -fx-transition: all 0.6s ease-in-out;
+}
+
+#findButton:hover {
+    -fx-background-color: #212121;
+    -fx-text-fill: white;
+    -fx-transition: all 0.6s ease-in-out;
+}
+
+#findButton:pressed {
+    -fx-background-color: #cdcdcd;
+    -fx-text-fill: #212121;
+}

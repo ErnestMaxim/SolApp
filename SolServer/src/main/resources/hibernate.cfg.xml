@@ -1,0 +1,35 @@
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Connection Properties -->
+        <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.connection.url">jdbc:sqlite:D:/clion_projects/JavaDev/SolApp/SolServer/solapp.db</property>
+
+        <!-- Hibernate Dialect -->
+        <property name="hibernate.dialect">org.hibernate.community.dialect.SQLiteDialect</property>
+
+        <!-- Schema Management -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Debugging -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Connection Pool -->
+        <property name="hibernate.connection.pool_size">1</property>
+
+        <!-- Session Context -->
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <!-- Entity Mapping -->
+        <mapping class="me.solapp.data.AdminLogs"/>
+        <mapping class="me.solapp.data.Attributes"/>
+        <mapping class="me.solapp.data.Cities"/>
+        <mapping class="me.solapp.data.Countries"/>
+        <mapping class="me.solapp.data.MeasuringUnits"/>
+        <mapping class="me.solapp.data.UserPreferences"/>
+        <mapping class="me.solapp.data.UserRoles"/>
+        <mapping class="me.solapp.data.Users"/>
+        <mapping class="me.solapp.data.WeatherDailyForecast"/>
+        <mapping class="me.solapp.data.WeatherStatus"/>
+    </session-factory>
+</hibernate-configuration>
